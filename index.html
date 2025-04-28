@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/styles.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- Barra de navegação -->
+      <nav id="navBar">
+        <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
+        <!-- Links na barra de nav -->
+        <ul id="nav_list">
+          <li class="nav_item active">
+            <a href="#home">Início</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#menu">Cardápio</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn_default">Peça aqui</button>
+
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Mesmo menu de navegação porém, para o mobile -->
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav_item">
+            <a href="#home">Início</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#menu">Cardápio</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn_default">Peça aqui</button>
+      </div>
+    </header>
+    <!-- COMEÇA AGORA O CONTEúDO DA PÁGINA MESMO -->
+    <main id="content">
+      <section id="home">
+        <!-- AQUI É O BANNER -->
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            O sabor que vai até
+            <span>você!</span>
+          </h1>
+
+          <p class="description">Aqui vai um texto aleatório</p>
+
+          <!-- Aqui é o botão de telefone -->
+          <div id="cta_buttons">
+            <a href="#" class="btn_default">Ver cardápio</a>
+            <a href="tel:+5555555555" id="phone_button">
+              <button class="btn_default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (51) 98765-4321
+            </a>
+          </div>
+
+          <!-- Aqui é o botão de Redes sociais -->
+          <div class="social_media_buttons">
+            <a href="#">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div id="banner">
+          <img src="src/assets/img/hero.png" alt="" />
+        </div>
+      </section>
+      <!-- AQUI TERMINA O BANNER -->
+
+      <section id="menu">
+        <h2 class="section_title">Cardápio</h2>
+        <h3 class="section_subtitle">Nossos pratos especiais</h3>
+
+        <div id="dishes">
+          <!-- AQUI COMEÇA OS PRATOS -->
+          <!-- Prato 1 -->
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <!-- Imagem Prato 1 -->
+            <img src="src/assets/img/dish.png" class="dish_image" alt="" />
+            <h3 class="dish_title">Estrombelete de Pombo Obeso</h3>
+            <span class="dish_description"
+              >Estrombelete assinado pelo Chef Alfredo, o prato é desconstruido,
+              feito com pombos selecionados para garantir a alta
+              qualidade.</span
+            >
+            <!-- Fim Imagem Prato 1 -->
+            <!-- Avaliação do prato por estrelas -->
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(+500)</span>
+            </div>
+            <!-- FIM Avaliação do prato por estrelas -->
+            <!-- Preço Prato 1 -->
+            <div class="dish_price">
+              <h4>R$20,00</h4>
+              <button class="btn_default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+            <!-- FIM Preço Prato 1 -->
+          </div>
+          <!-- FIM Prato 1 -->
+          <!-- Prato 2 -->
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <!-- Imagem Prato 2 -->
+            <img src="src/assets/img/dish2.png" class="dish_image" alt="" />
+            <h3 class="dish_title">Sanduíche La Jorge Renault</h3>
+            <span class="dish_description"
+              >Delicíoso sanduíche muito famoso em París.</span
+            >
+            <!-- Fim Imagem Prato 2 -->
+            <!-- Avaliação do prato por estrelas -->
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(+500)</span>
+            </div>
+            <!-- FIM Avaliação do prato por estrelas -->
+            <!-- Preço Prato 2 -->
+            <div class="dish_price">
+              <h4>R$20,00</h4>
+              <button class="btn_default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+            <!-- FIM Preço Prato 2 -->
+          </div>
+          <!-- FIM Prato 2 -->
+          <!-- Prato 3 -->
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <!-- Imagem Prato 3 -->
+            <img src="src/assets/img/dish3.png" class="dish_image" alt="" />
+            <h3 class="dish_title">Salada Flor do Deserto</h3>
+            <span class="dish_description"
+              >Feito com ingredientes presentes no deserto, leve e
+              refrescante.</span
+            >
+            <!-- Fim Imagem Prato 3 -->
+            <!-- Avaliação do prato por estrelas -->
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(+500)</span>
+            </div>
+            <!-- FIM Avaliação do prato por estrelas -->
+            <!-- Preço Prato 3 -->
+            <div class="dish_price">
+              <h4>R$20,00</h4>
+              <button class="btn_default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+            <!-- FIM Preço Prato 3 -->
+          </div>
+          <!-- FIM Prato 3 -->
+          <!-- Prato 4 -->
+          <div class="dish">
+            <div class="dish_heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <!-- Imagem Prato 4 -->
+            <img src="src/assets/img/dish4.png" class="dish_image" alt="" />
+            <h3 class="dish_title">Yakissoba de Frutos do Mar Mediterrâneo</h3>
+            <span class="dish_description"
+              >Maravilhoso sabor do Mediterrâneo, apenas ingredientes
+              frescos.</span
+            >
+            <!-- Fim Imagem Prato 4 -->
+            <!-- Avaliação do prato por estrelas -->
+            <div class="dish_rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(+500)</span>
+            </div>
+            <!-- FIM Avaliação do prato por estrelas -->
+            <!-- Preço Prato 4 -->
+            <div class="dish_price">
+              <h4>R$20,00</h4>
+              <button class="btn_default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+            <!-- FIM Preço Prato 4 -->
+          </div>
+          <!-- FIM Prato 4 -->
+        </div>
+        <!-- AQUI Termina OS PRATOS -->
+      </section>
+
+      <!-- AQUI COMEÇA AS AVALIAÇÔES -->
+      <section id="testimonials">
+        <img src="src/assets/img/chef.png" id="testimonials_chef" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section_title">Depoimentos</h2>
+          <h3 class="section_subtitle">O que os clientes falam sobre nós!</h3>
+          <!-- AQUI COMEÇA OS FEEDBACKS -->
+          <div id="feedbacks">
+            <!-- AQUI COMEÇA O FEEDBACK 1 -->
+            <div class="feedback">
+              <img
+                src="src/assets/img/avatar.png"
+                class="feedback_avatar"
+                alt=""
+              />
+              <!-- AQUI COMEÇA DEPOIMENTOS 1 -->
+              <div class="feedback_content">
+                <p>
+                  Fulana de Tal
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Donec ac libero finibus nunc volutpat congue sit amet ut
+                  ipsum. Mauris quis rutrum neque. Sed luctus ullamcorper lorem,
+                  vitae semper quam tincidunt a. In sollicitudin ante ut nisl
+                  laoreet feugiat."
+                </p>
+              </div>
+              <!-- AQUI TERMINA DEPOIMENTOS 1 -->
+            </div>
+            <!-- AQUI TERMINA O FEEDBACK 1 -->
+            <!-- AQUI COMEÇA O FEEDBACK 2 -->
+            <div class="feedback">
+              <img
+                src="src/assets/img/avatar.png"
+                class="feedback_avatar"
+                alt=""
+              />
+              <!-- AQUI COMEÇA DEPOIMENTOS 2 -->
+              <div class="feedback_content">
+                <p>
+                  Fulana de Tal
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Donec ac libero finibus nunc volutpat congue sit amet ut
+                  ipsum. Mauris quis rutrum neque. Sed luctus ullamcorper lorem,
+                  vitae semper quam tincidunt a. In sollicitudin ante ut nisl
+                  laoreet feugiat."
+                </p>
+              </div>
+              <!-- AQUI TERMINA DEPOIMENTOS 2 -->
+            </div>
+            <!-- AQUI TERMINA O FEEDBACK 2 -->
+          </div>
+          <!-- AQUI TERMINA OS FEEDBACKS -->
+          <!-- AQUI COMEÇA O Botão de avaliações -->
+          <!-- Pode-se colocar um link para pessoa ser direcionada para as avaliações do googles por exemplo -->
+          <button class="btn_default">Ver mais avaliações</button>
+          <!-- AQUI TERMINA O Botão de avaliações -->
+        </div>
+      </section>
+      <!-- AQUI Termina AS AVALIAÇÔES -->
+    </main>
+    <!-- TERMINA O CONTEúDO DA PÁGINA MESMO -->
+    <!-- AQUI COMEÇA O FOOTER -->
+    <footer id="footer">
+      <img src="src/assets/img/wave.svg" alt="" />
+      <div id="footer_items">
+        <span id="copyright"> &copy 2025 Rafael Portes Bueno </span>
+        <!-- AQUI COMEÇA O social media FOOTER -->
+        <div class="social_media_buttons">
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+      <!-- AQUI TERMINA O social media FOOTER -->
+    </footer>
+    <!-- AQUI TERMINA O FOOTER -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
